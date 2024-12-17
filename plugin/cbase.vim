@@ -4,13 +4,13 @@
 " License:	This file is placed in the public domain
 
 function! InsertTemplate()
-	 let l:startLine = 13
+	 let l:startLine = 12
 	let l:cTemplate = [
 		\ '#include <unistd.h>',
 		\ '',
 		\ 'int main(void)',
 		\ '{',
-		\ '    ft_fun();',
+		\ '    write(1, "hello, world", 12);',
 		\ '    return (0);',
 		\ '}'
 	\ ]

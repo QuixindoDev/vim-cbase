@@ -25,6 +25,6 @@ Copy the **cbase** folder into your Vim runtime path
 ~/.vim/pack/plugins/start/cbase/
 ```
 ### Usage
-- Press <F2> to insert the template.
+- Press **<F2>** to insert the template.
 or
 - Run :Cbase to manually insert the starter template.

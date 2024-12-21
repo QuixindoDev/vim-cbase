@@ -17,14 +17,31 @@ int     main(void)
 ## Installation
 
 ### Using [vim-plug](https://github.com/junegunn/vim-plug)
-Add the following to your `.vimrc` or `init.vim`:
+
+Add a vim-plug section to your `~/.vimrc` (or `~/.config/nvim/init.vim` for Neovim)
+
+1. Begin the section with `call plug#begin()`
+1. List the plugins with `Plug` commands
+1. End the section with `call plug#end()`
+
+For example,
+
 ```vim
+call plug#begin()
+
+" List your plugins here
 Plug 'JsExpertCoder/cbase'
+
+call plug#end()
 ```
-Then reload Vim and run:
-```vim
-:PlugInstall
-```
+
+Reload the file or restart Vim, then you can,
+
+* `:PlugInstall` to install the plugins
+* `:PlugUpdate` to install or update the plugins
+* `:PlugDiff` to review the changes from the last update
+* `:PlugClean` to remove plugins no longer in the list
+
 ### Manual Installation
 
 Copy the **cbase** folder into your Vim runtime path

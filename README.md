@@ -49,7 +49,7 @@ Copy the **cbase** folder into your Vim runtime path
 ```bash
 ~/.vim/pack/plugins/start/cbase/
 ```
-### Usage
+## Usage
 
 1. Insert the Header:
  Press **F1** or run : **StdHeader** to insert your 42 School project header.

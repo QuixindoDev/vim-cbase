@@ -17,28 +17,71 @@ int     main(void)
 ## Installation
 
 ### Using [vim-plug](https://github.com/junegunn/vim-plug)
-Add the following to your `.vimrc` or `init.vim`:
+
+Add a vim-plug section to your `~/.vimrc` (or `~/.config/nvim/init.vim` for Neovim)
+
+1. Begin the section with `call plug#begin()`
+1. List the plugins with `Plug` commands
+1. End the section with `call plug#end()`
+
+For example,
+
 ```vim
+call plug#begin()
+
+" List your plugins here
 Plug 'JsExpertCoder/cbase'
+
+call plug#end()
 ```
-Then reload Vim and run:
-```vim
-:PlugInstall
-```
+
+Reload the file or restart Vim, then you can,
+
+* `:PlugInstall` to install the plugins
+* `:PlugUpdate` to install or update the plugins
+* `:PlugDiff` to review the changes from the last update
+* `:PlugClean` to remove plugins no longer in the list
+
 ### Manual Installation
 
-Copy the **cbase** folder into your Vim runtime path
+1. **Open your terminal:**
 
-```bash
-~/.vim/pack/plugins/start/cbase/
-```
+    Open a terminal window on your system. 
+
+2. **Download the plugin repository:**
+
+    Run the following command in the terminal to download the repository:
+
+    ```bash
+    git clone https://github.com/JsExpertCoder/cbase.git
+    ```
+
+3. **Move the plugin to the Vim runtime path:**
+
+    Copy the `cbase` folder into the `~/.vim/pack/plugins/start/` directory:
+
+    ```bash
+    mv cbase ~/.vim/pack/plugins/start/
+    ```
+
+    For Neovim, use this directory instead:
+
+    ```bash
+    mv cbase ~/.local/share/nvim/site/pack/plugins/start/
+    ```
+
+4. **Restart Vim or Neovim:**
+
+    Close and reopen Vim or Neovim to load the plugin automatically.
+
+
 ## Usage
 
 1. Insert the Header:
  Press **F1** or run : **StdHeader** to insert your 42 School project header.
 2. Insert the Template:
 
-- Press **CBase** to **insert** the C starter template.
+- Press **F2** to **insert** the C starter template.
 
 - Alternatively, run the command:
 ```vim
